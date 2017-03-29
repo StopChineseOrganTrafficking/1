@@ -2,14 +2,14 @@
     box-sizing: border-box;
 }
 
-#main {
+#outer {
     background-color: aqua;
     position: absolute;
     top: 0; right: 0; bottom: 0; left: 0;
     padding: 18px;
 }
 
-#content {
+#inner {
     background-color: white;
     border-radius: 18px;
     text-align: center;
