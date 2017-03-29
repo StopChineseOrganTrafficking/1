@@ -7,7 +7,6 @@ $(document).ready(function() {
     });
     $('#info').click(function() {
         $('#content').html('<p>Organ Trafficking in China is a multi -million dollar busniness. Although it might generate lots of money for Chins, it is exremely creul and harmful to everyone.</p>');
-        updates on this project.');
         $('#tab_h2').text('Info');
         $('title').text('Info'); 
     });
