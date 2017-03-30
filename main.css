@@ -7,9 +7,11 @@ h1 {
 }
 
 #content {
-    overflow-y: scroll;
+    overflow-y: auto;
     text-align: center;
-    margin: 20px;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
 
 }
 
