@@ -10,8 +10,6 @@ h1 {
     overflow-y: auto;
     text-align: center;
     padding: 20px;
-    height: 100%;
-    width: 100%;
 }
 
 #header {
