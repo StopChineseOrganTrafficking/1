@@ -48,6 +48,7 @@ h1, h2 {
 
 #photo_container {
     width: 90%;
+    margin: auto;
 }
 
 #photo {
