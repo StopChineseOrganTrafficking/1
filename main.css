@@ -46,25 +46,14 @@ h1, h2 {
     padding-left: 20px;
 }
 
-<<<<<<< HEAD
-#photo_container1 {
-    width: 90%;
-=======
 #photo_container {
     width: 100%;
->>>>>>> origin/master
     margin: auto;
     max-height: 768px;
     max-width: 1024px;
 }
 
-<<<<<<< HEAD
 #photo1 {
     width: inherit;
     height: inherit;
-}
-=======
-#photo {
-    width: inherit;
-}
->>>>>>> origin/master
+ }
