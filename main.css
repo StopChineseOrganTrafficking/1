@@ -45,3 +45,9 @@ h1, h2 {
     text-align: left;
     padding-left: 20px;
 }
+
+#photo {
+    height: auto;
+    width: auto;
+    align-self: center;
+}
