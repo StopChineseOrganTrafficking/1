@@ -47,7 +47,7 @@ h1, h2 {
 }
 
 #photo {
-    height: auto;
-    width: auto;
+    height: 256px;
+    width: 341px;
     align-self: center;
 }
