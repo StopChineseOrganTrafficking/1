@@ -47,12 +47,10 @@ h1, h2 {
 }
 
 #photo_container {
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
 #photo {
-    width: auto;
-    height: auto;
-    margin: auto;
+    width: inherit;
 }
