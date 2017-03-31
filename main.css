@@ -46,8 +46,12 @@ h1, h2 {
     padding-left: 20px;
 }
 
+#photo_container {
+    width: 90%;
+}
+
 #photo {
-    height: 256px;
-    width: 341px;
-    align-self: center;
+    width: auto;
+    height: auto;
+    margin: auto;
 }
