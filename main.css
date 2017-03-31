@@ -22,14 +22,15 @@
 
 #header {
     text-align: center;
-    background-color: lightgrey;
     padding: 0px;
     padding-bottom: 10px;
     margin-right: 5%;
     margin-left: 5%;
-    border-radius: 15px;
     margin-top: 5px;
-    
+    border-color: red;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 15px;
 }
 
 html, body {
