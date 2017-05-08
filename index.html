@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Stop Organ Trafficking</title>
+    <title>SCOT</title>
     <link rel="stylesheet" type="css/text" src="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -52,14 +52,31 @@ html, body {
   padding-bottom: 10px;
   margin-top: 20px;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: grey;
+}
     </style>
   </head>
   <body>
     <div id="wrapper">
-      <div id="header">
-        <h1 id="title">Stop Chinese Organ Trafficking</h1>
+      <div id="header" class="top">
+        <h1>Stop Chinese Organ Trafficking</h1>
       </div>
-      <div>
+      <div class="top">
         <h1>Stop Chinese Organ Trafficking</h1>
       </div>
       <div id="content">
@@ -82,13 +99,23 @@ html, body {
         <div id="help">
           <h1>Support Us</h1>
           <a href="https://twitter.com/intent/tweet?button_hashtag=SCOT" class="twitter-hashtag-button" data-size="large" data-text="Visit organtrafficking.info to learn more about the Chinese government&#39;s human rights violations." data-show-count="false">Tweet #SCOT</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <div id="fb-root"></div>
+          <div id=""></div>
+          <script>(function(d, s, id) { 
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+          <div class="fb-follow" data-href="https://www.facebook.com/Stop-Chinese-Organ-Trafficking-284326922017998/?call_to_action=1&amp;source=aymt" data-layout="button" data-size="large" data-show-faces="false"></div>
         </div>
       </div>
       <div id="footer">
-        <p>Webpage Programmer: Bryan Johnson</p>
+        <p>Place Holder</p>
       </div>
     </div>
-    <script src="jquery-3.2.1.min.js" async></script>
-    <scritp src="interact.js" async></scritp>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="interact.js"></script>
   </body>
 <html>
