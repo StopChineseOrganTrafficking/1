@@ -11,6 +11,7 @@ html, body {
   box-sizing: border-box;
   height: 100%;
   margin: 0;
+  padding: 0;
 }
 * {
   box-sizing: inherit;
@@ -20,41 +21,24 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
+  text-align: center;
+  font-family: "Taviraj", serif;
 }
 #header {
   overflow-x: auto;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+  width: 100%;
 }
 #content {
   text-align: center;
   font-family: "Taviraj", serif;
   width: 90%;
   margin: auto;
-  padding-top: 40px;
   display: block;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  padding-left: 5%;
-  width: 100%;
-  background-color: black;
-  font-family: "Taviraj", serif;
-  position: fixed;
-}
-li {
-  display: inline;
-  visibility: visible;
-}
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-li a:hover {
-  background-color: grey;
 }
 .seperator {
   border: 2px solid black;
@@ -68,19 +52,15 @@ li a:hover {
   padding-bottom: 10px;
   margin-top: 20px;
 }
-#menu img {
-  height: 64px;
-  width: 64px;
-}
     </style>
-  <head>
+  </head>
   <body>
     <div id="wrapper">
       <div id="header">
-        <ul class="nav_bar">
-          <li id="menu"><img src="mobile-nav.png"></li>
-        </ul>
-        <div class="selector"><p>boi</p></div>
+        <h1 id="title">Stop Chinese Organ Trafficking</h1>
+      </div>
+      <div>
+        <h1>Stop Chinese Organ Trafficking</h1>
       </div>
       <div id="content">
         <div id="info">
@@ -108,11 +88,7 @@ li a:hover {
         <p>Webpage Programmer: Bryan Johnson</p>
       </div>
     </div>
-    <script>
-    $(Document).ready(function{
-                      $("#menu").onclick(function{
-                                         $("li").style.display = "inline"
-                                         });
-                      });
-    </script>
+    <script src="jquery-3.2.1.min.js" async></script>
+    <scritp src="interact.js" async></scritp>
+  </body>
 <html>

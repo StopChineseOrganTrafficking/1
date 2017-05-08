@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#menu').click(function() {
-        $('.panel').slideToggle('slow');
+    $('#header').onclick(function() {
+        $('#title').text('wow');
     });
 });
