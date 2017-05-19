@@ -12,9 +12,6 @@ html, body {
   margin: 0;
   padding: 0;
 }
-* {
-  box-sizing: inherit;
-}
 #wrapper {
   height: 100%;
   width: 100%;
@@ -69,6 +66,14 @@ li a {
 li a:hover {
     background-color: grey;
 }
+ol {
+  background-color: #efefef;
+  list-style-type: none;
+  padding: 0px;
+}
+ol li a {
+  color: black;
+}
     </style>
   </head>
   <body>
@@ -102,7 +107,7 @@ li a:hover {
           <a href="https://twitter.com/intent/tweet?button_hashtag=SCOT" class="twitter-hashtag-button" data-size="large" data-text="Visit organtrafficking.info to learn more about the Chinese government&#39;s human rights violations." data-show-count="false">Tweet #SCOT</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
           <div id="fb-root"></div>
           <div id=""></div>
-          <script>(function(d, s, id) { 
+          <script>(function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
             js = d.createElement(s); js.id = id;
@@ -113,7 +118,12 @@ li a:hover {
         </div>
       </div>
       <div id="footer">
-        <p>Place Holder</p>
+        <ol>
+          <li><h3>Sources</h3></li>
+          <li><a href="http://www.cnn.com/2016/06/23/asia/china-organ-harvesting/">CNN</a></li>
+          <li><a href="http://www.dailymail.co.uk/news/article-3027088/A-Human-Harvest-Chinas-organ-trafficking-exposed-shocking-documentary-alleges-illegal-trade-worth-staggering-1-billion-year.html">Daily Mail</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Organ_harvesting_from_Falun_Gong_practitioners_in_China">WikiPedia</a></li>
+        </ol>
       </div>
     </div>
     <script src="jquery-3.2.1.min.js"></script>
