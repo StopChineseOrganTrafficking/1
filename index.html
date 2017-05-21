@@ -62,32 +62,42 @@ html, body {
   padding-bottom: 10px;
   margin-top: 20px;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
+#nav_bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
 }
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+#nav_bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-li a:hover {
-    background-color: grey;
+#nav_bar li a:hover {
+  background-color: grey;
 }
-ol {
+.footer_column {
   background-color: #efefef;
   list-style-type: none;
   padding: 0px;
   display: inline-block;
 }
-ol li a {
+.footer_column li a {
   color: black;
   padding: 15px 30px 15px 30px;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.footer_column .pre_select:hover {
+      background-color: grey;
+}
+.footer_column .blank {
+  color: #efefef;
 }
     </style>
   </head>
@@ -96,8 +106,8 @@ ol li a {
       <div id="header" class="top">
         <h1>Stop Chinese Organ Trafficking</h1>
       </div>
-      <div class="top">
-        <h1 id="head_spacer">Stop Chinese Organ Trafficking</h1>
+      <div id="head_spacer" class="top">
+        <h1>Stop Chinese Organ Trafficking</h1>
       </div>
       <div id="content">
         <hr class="seperator" id="info">
@@ -133,17 +143,17 @@ ol li a {
         </div>
       </div>
       <div id="footer">
-        <ol>
+        <ol class="footer_column">
           <li><h3>Sources</h3></li>
-          <li><a href="http://www.cnn.com/2016/06/23/asia/china-organ-harvesting/" target="_blank">CNN</a></li>
-          <li><a href="http://www.dailymail.co.uk/news/article-3027088/A-Human-Harvest-Chinas-organ-trafficking-exposed-shocking-documentary-alleges-illegal-trade-worth-staggering-1-billion-year.html" target="_blank">Daily Mail</a></li>
-          <li><a href="https://en.wikipedia.org/wiki/Organ_harvesting_from_Falun_Gong_practitioners_in_China" target="_blank">WikiPedia</a></li>
+          <li><a class="pre_select" href="http://www.cnn.com/2016/06/23/asia/china-organ-harvesting/" target="_blank">CNN</a></li>
+          <li><a class="pre_select" href="http://www.dailymail.co.uk/news/article-3027088/A-Human-Harvest-Chinas-organ-trafficking-exposed-shocking-documentary-alleges-illegal-trade-worth-staggering-1-billion-year.html" target="_blank">Daily Mail</a></li>
+          <li><a class="pre_select" href="https://en.wikipedia.org/wiki/Organ_harvesting_from_Falun_Gong_practitioners_in_China" target="_blank">WikiPedia</a></li>
         </ol>
-        <ol>
-          <li><h3>Test</h3></li>
-          <li><a>one</a></li>
-          <li><a>another one</a></li>
-          <li><a>another one</a></li>
+        <ol class="footer_column">
+          <li><h3>Credits:</h3></li>
+          <li><a class="pre_select">Bryan Johnson</a></li>
+          <li><a class="pre_select">Dylan Curnow</a></li>
+          <li><a class="blank">blank</a></li>
         </ol>
       </div>
     </div>
