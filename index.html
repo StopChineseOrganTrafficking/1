@@ -29,6 +29,16 @@ html, body {
   color: white;
   width: 100%;
 }
+#head_spacer {
+  color: white;
+  background-color: white;
+}
+#head_spacer ul {
+  background-color: white;
+}
+#head_spacer li a:hover {
+  background-color: white;
+}
 #content {
   text-align: center;
   font-family: "Taviraj", serif;
@@ -41,6 +51,9 @@ html, body {
   border: 2px solid black;
   width: 90%;
 }
+#info {
+  display: none;
+}
 #footer {
   font-family: "Roboto", sans-serif;
   background-color: #efefef;
@@ -49,30 +62,42 @@ html, body {
   padding-bottom: 10px;
   margin-top: 20px;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
+#nav_bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
 }
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+#nav_bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-li a:hover {
-    background-color: grey;
+#nav_bar li a:hover {
+  background-color: grey;
 }
-ol {
+.footer_column {
   background-color: #efefef;
   list-style-type: none;
   padding: 0px;
+  display: inline-block;
 }
-ol li a {
+.footer_column li a {
   color: black;
+  padding: 15px 30px 15px 30px;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.footer_column .pre_select:hover {
+      background-color: grey;
+}
+.footer_column .blank {
+  color: #efefef;
 }
     </style>
   </head>
@@ -81,28 +106,28 @@ ol li a {
       <div id="header" class="top">
         <h1>Stop Chinese Organ Trafficking</h1>
       </div>
-      <div class="top">
+      <div id="head_spacer" class="top">
         <h1>Stop Chinese Organ Trafficking</h1>
       </div>
       <div id="content">
-        <div id="info">
+        <hr class="seperator" id="info">
+        <div>
           <h1>General Information</h1>
-          <p>Organ trafficking is defined as illegal harvest, transport, and/or use of human organs. In China, it is a <em>billion</em> dollar industry.  Although it generates a profit for the Chinese government, it is extremely cruel and harmful. Each year, Chinese hospitals illegally perform over 60,000 organ transplants. Most of the organs used are taken from those not aligned with the Chinese government’s political or religious ideals. People such as those who follow Falun Gong are targeted based on their beliefs, and executed by the government in order to replenish the supply of organs for transplant.</p>
+          <p>Organ trafficking is defined as illegal harvest, transport, and/or use of human organs. In China, it is a billion dollar industry.  Although it generates a profit for the Chinese government, it is extremely cruel and harmful. Each year, Chinese hospitals illegally perform over 60,000 organ transplants. Most of the organs used are taken from those not aligned with the Chinese government’s political or religious ideals. People such as those who follow Falun Gong are targeted based on their beliefs, and executed by the government in order to replenish the supply of organs for transplant.</p>
           <p>The Chinese organ trafficking goes against international law declared by the United Nations. According to the UN, it is a direct violation of human rights.</p>
         </div>
-        <hr class="seperator">
-        <div id="evidence">
-            <h1>Source of Organs</h1>
-          <p>The main source of these transplants are coming from Falun Gong. Falun Gong is a disciplinary centre teaching the Buddhist religion. They help in the practice of meditation and other spiritual ceremonys. In the 1990's, China helped Falun Gong with money and urged the people of China to engage in the practice. But, later with the rise of communist China, the regime later sought to end the teachings and centres of Falun Gong. Protests started to stop the prosecution against Falun Gong, but the regime captured members and detained them. The regime did this due to the fact that they felt threatened by the influence Falun Gong was having on its people. So, they later sought to destroy them.</p>
-          <p>China started to capture the members and detain them. They would bring them into prisions without trial. While in prison, they would seek to end the lives of their detainees. They would take the prisioners, kill them, then take the organs out and preform organ transplants on people who are waiting. There is lots of evidence to support this claim of them using mostly Falun Gong detainees organs for transplants.</p>
+        <hr class="seperator" id="evidence">
+        <div>
+          <h1>Evidence of Organ Trafficking</h1>
+          <p>China is showing no signs of stopping this cruel practice on innocent people. They have made up false claims stating that they don't use this practice anymore, but this is highly controversial. The Chinese have recently been under fire by the Vatican by providing no evidence that they don't use this practice anymore. They only used a two slide presentation to display their cause, and many people believe that it's not enough. There has also been a book written in 2009 called Bloody Harvest, which goes into depth about these terrible killings. A phone conversation recorded states this</p>
         </div>
-        <hr class="seperator">
-        <div id="source">
-            <h1>Evidence of Organ Trafficking</h1>
-          <p>China is showing no signs of stopping this cruel practice on innocent people. They have made up false claims stating that they don't use this practice anymore, but this is highly controversial. The Chinese have recently been under fire by the Vatican by providing no evidence that they don't use this practice anymore. They only used a two slide presentation to display their cause, and many people believe that it's not enough. There has also been a book written in 2009 called Bloody Harvest, which goes into depth about these terrible killings.</p>
+        <hr class="seperator" id="source">
+        <div>
+          <h1>Source of Organs</h1>
+          <p>The main source of these transplants are coming from Falun Gong. Falun Gong is a disciplinary centre teaching the Buddhist religion. China is prosecuting against them because they feel that they have too much power over the people living in China. The Chinese government feels that the people of Falun Gong can't be controlled by their propaganda. So, they have the need to kill these people and take their organs illegally without their, or a family member's consent. What China does is detain and capture these people into facilities. Then, they later kill them and use their organs to engage in Organ Trafficking.</p>
         </div>
-        <hr class="seperator">
-        <div id="help">
+        <hr class="seperator" id="help">
+        <div>
           <h1>Support Us</h1>
           <a href="https://twitter.com/intent/tweet?button_hashtag=SCOT" class="twitter-hashtag-button" data-size="large" data-text="Visit organtrafficking.info to learn more about the Chinese government&#39;s human rights violations." data-show-count="false">Tweet #SCOT</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
           <div id="fb-root"></div>
@@ -118,15 +143,21 @@ ol li a {
         </div>
       </div>
       <div id="footer">
-        <ol>
+        <ol class="footer_column">
           <li><h3>Sources</h3></li>
-          <li><a href="http://www.cnn.com/2016/06/23/asia/china-organ-harvesting/">CNN</a></li>
-          <li><a href="http://www.dailymail.co.uk/news/article-3027088/A-Human-Harvest-Chinas-organ-trafficking-exposed-shocking-documentary-alleges-illegal-trade-worth-staggering-1-billion-year.html">Daily Mail</a></li>
-          <li><a href="https://en.wikipedia.org/wiki/Organ_harvesting_from_Falun_Gong_practitioners_in_China">WikiPedia</a></li>
+          <li><a class="pre_select" href="http://www.cnn.com/2016/06/23/asia/china-organ-harvesting/" target="_blank">CNN</a></li>
+          <li><a class="pre_select" href="http://www.dailymail.co.uk/news/article-3027088/A-Human-Harvest-Chinas-organ-trafficking-exposed-shocking-documentary-alleges-illegal-trade-worth-staggering-1-billion-year.html" target="_blank">Daily Mail</a></li>
+          <li><a class="pre_select" href="https://en.wikipedia.org/wiki/Organ_harvesting_from_Falun_Gong_practitioners_in_China" target="_blank">WikiPedia</a></li>
+        </ol>
+        <ol class="footer_column">
+          <li><h3>Credits:</h3></li>
+          <li><a class="pre_select">Bryan Johnson</a></li>
+          <li><a class="pre_select">Dylan Curnow</a></li>
+          <li><a class="blank">blank</a></li>
         </ol>
       </div>
     </div>
-    <script src="jquery-3.2.1.min.js"></script>
-    <script src="interact.js"></script>
+    <script src="jquery-3.2.1.min.js" aysnc></script>
+    <script src="interact.js" async></script>
   </body>
 <html>
