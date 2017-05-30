@@ -39,9 +39,7 @@ html, body {
 #head_spacer li a:hover {
   background-color: white;
 }
-#content {
-  text-align: center;
-  font-family: "Taviraj", serif;
+.buffer{
   width: 90%;
   margin: auto;
   display: block;
@@ -110,15 +108,71 @@ html, body {
   display: inline-block;
 }
 .photo_container {
-    width: 100%;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  width: 100%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .photo {
-    width: inherit;
-    height: inherit;
- }
+  width: inherit;
+  height: inherit;
+}
+#petition {
+  border: 2px solid grey;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 20px;
+}
+.normal {
+  text-decoration: none;
+}
+.pie {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: orange;
+  background-image: linear-gradient(to right, transparent 50%, purple 0);
+  transform: rotate(180deg);
+  margin: auto;
+}
+.pie::before {
+  content: '';
+  display: block;
+  margin-left: 50%;
+  height: 100%;
+  border-radius: 0 100% 100% 0 / 50%;
+  background-color: inherit;
+  transform-origin: left;
+  transform: rotate(56.7deg);
+}
+#stats {
+  background-color: black;
+  color: white;
+  margin: auto;
+}
+#stats h2 {
+  color: #d81c71;
+  padding: 5px 20px 0px 20px;
+}
+#stats p {
+  padding: 0px 20px 20px 20px;
+}
+#hospitals ol {
+  display: inline-block;
+  padding: 10px 10px 0px 10px;
+}
+#hospitals li {
+  display: block;
+  font-weight: bold;
+}
+#usa-percent {
+  background-color: purple;
+  width: 43.45px;
+}
+#china-percent {
+  background-color: orange;
+  width: 43.45px;
+}
     </style>
   </head>
   <body>
@@ -129,7 +183,7 @@ html, body {
       <div id="head_spacer" class="top">
         <h1>Stop Chinese Organ Trafficking</h1>
       </div>
-      <div id="content">
+      <div class="buffer">
         <a name="info" class="in-link"></a>
         <div>
           <h1>General Information</h1>
@@ -150,29 +204,61 @@ html, body {
             <p><span class="bold">Dr. Dai:</span> Yes, we have. I can’t talk openly to you over the phone.</p>
             <p><span class="bold">Caller:</span> If you can find me this type, I am coming very soon.</p>
             <p><span class="bold">Dr. Dai:</span> It’s OK. Please come.</p>
+            </div>
+            <p><span class="bold">This</span> conversation is between a Chinese doctor and an investigative reporter. The doctor admits to the Chinese government’s illegal organ transplants and confirms that the organs come from Falun Gong practitioners.</p>
           </div>
-          <p><span class="bold">This</span> conversation is between a Chinese doctor and an investigative reporter. The doctor admits to the Chinese government’s illegal organ transplants and confirms that the organs come from Falun Gong practitioners.</p>
         </div>
-        <div class="photo_container" style="max-width:800px">
-          <a href="photo2.png" target="_blank" class="photo">
-            <img src="photo2.png" class="photo">
-          </a>
-        </div>
-        <a name="source" class="in-link"></a>
-        <hr class="seperator">
-        <div>
+            <div id="stats">
+              <div id="hospitals">
+                <h2><span class="bold">ORGAN TRANSPLANT HOSPITALS</span></h2>
+                <p>The graph shows the percentage of hospitals each country has in comparison to both combined in 2006. China officialy created an organ donor systemin 2008.</p>
+                <p><span class="bold">TOTAL = China + USA</span></p>
+                <div class="pie"></div>
+                <ol>
+                  <div id="usa-percent"><li>16%</li></div>
+                  <li>USA</li>
+                </ol>
+                <ol>
+                  <div id="china-percent"><li>84%</li></div>
+                  <li>China</li>
+                </ol>
+              </div>
+              <div id="kidneys">
+                <h2><span class="bold">KIDNEY TRANPSLANTS</span></h2>
+                <p>This graph shows the amount of kidney transplants preformed in China from 1989-2001. It is important to note the steep increase, which causes higher demand.</p>
+                <div id="kidney-chart">
+
+                </div>
+              </div>
+            </div>
+            <div class="buffer">
+          <a name="source" class="in-link"></a>
+          <hr class="seperator">
+          <div>
           <h1>Persecution of Falun Gong</h1>
           <p><span class="bold">The</span> main source of these illegally transplanted organs is Falun Gong practitioners. Falun Gong is a disciplinary centre teaching the Buddhist religion. China is prosecuting them because they think that Falun Gong practitioners have too much influence on Chinese citizens. Additionally, the Chinese government fears that Falun Gong practitioners can not be controlled by their propaganda. In the Chinese government’s perspective, this necessitates the killing and harvesting of organs of Falun Gong practitioners.</p>
-        </div>
-        <div class="photo_container" style="max-width:768px">
-          <a href="photo1.jpg" target="_blank" class="photo">
-            <img src="photo1.jpg" class="photo">
-          </a>
-        </div>
+          </div>
+          <div class="photo_container" style="max-width:768px">
+            <a href="photo1.jpg" target="_blank" class="photo">
+              <img src="photo1.jpg" class="photo">
+            </a>
+          </div>
         <a name="help" class="in-link"></a>
         <hr class="seperator">
         <div>
           <h1>Support Us</h1>
+          <div>
+            <a href="https://www.change.org/p/united-nations-office-of-drugs-and-crime-stop-organ-trafficking-in-china?recruiter=518213651&utm_source=share_petition&utm_medium=copylink&utm_campaign=share_petition" class="normal">
+              <div id="petition">
+                <h2>Change.org Petition</h2>
+                <div class="photo_container" style="max-width:800px">
+                  <img src="photo3.jpg" class="photo">
+                </div>
+                <p>Sign our Change.org petition to help us reach our goal of pressuring the UN and China in to ending these organ transplants.</p>
+                <p>Click Here to Sign</p>
+              </div>
+            </a>
+          </div>
           <a href="https://twitter.com/intent/tweet?button_hashtag=SCOT" class="twitter-hashtag-button" data-size="large" data-text="Visit organtrafficking.info to learn more about the Chinese government&#39;s human rights violations." data-show-count="false">Tweet #SCOT</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
           <div id="fb-root"></div>
           <div id=""></div>
