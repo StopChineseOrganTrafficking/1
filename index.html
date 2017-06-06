@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Yes, we know that this code is inefficient and ugly. If you'd like to fix it, the GitHub link is in the footer -->
   <head>
     <title>SCOT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -162,6 +163,41 @@ html, body {
   background-color: orange;
   width: 43.45px;
 }
+#media_holder {
+  list-style: none;
+  padding: 0px;
+  margin: auto;
+  padding-bottom: 20px;
+  max-width: 800px;
+}
+#media_holder li{
+  display: inline-block;
+  width: 40%;
+}
+#media_holder a {
+  text-decoration: none;
+}
+#media_holder p {
+  color: #ffffff;
+  display: inline;
+}
+.media_button {
+  padding: 10px;
+  margin: 5%;
+}
+.icon_holder {
+  display: inline;
+  height: 2em;
+  width: 2em;
+}
+#twitter {
+  color: #28A9E2;
+  background-color: #28A9E2;
+}
+#facebook {
+  color: #3b5998;
+  background-color: #3b5998;
+}
     </style>
   </head>
   <body>
@@ -198,7 +234,7 @@ html, body {
             <div id="stats">
               <div id="hospitals">
                 <h2><span class="bold">ORGAN TRANSPLANT HOSPITALS</span></h2>
-                <p>The graph shows the percentage of hospitals each country has in comparison to both combined in 2006. China officialy created an organ donor systemin 2008.</p>
+                <p>The graph shows the percentage of hospitals each country has in comparison to both combined in 2006. China officialy created an organ donor system in 2008.</p>
                 <p><span class="bold">TOTAL = China + USA</span></p>
                 <div class="pie"></div>
                 <ol>
@@ -234,6 +270,28 @@ html, body {
         <hr class="seperator">
         <div>
           <h1>Support Us</h1>
+          <ul id="media_holder">
+            <li>
+              <a href="https://twitter.com/ungoal16">
+                <div id="twitter" class="media_button">
+                  <div class="icon_holder" style="max-width:30px">
+                    <img src="photo3.png" class="photo">
+                  </div>
+                  <p>Follow</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.google.com/">
+                <div id="facebook" class="media_button">
+                  <div class="icon_holder" style="max-width:30px">
+                    <img src="photo4.png" class="photo">
+                  </div>
+                  <p>Like</p>
+                </div>
+                </a>
+              </li>
+            </ul>
             <a href="https://www.change.org/p/united-nations-office-of-drugs-and-crime-stop-organ-trafficking-in-china?recruiter=518213651&utm_source=share_petition&utm_medium=copylink&utm_campaign=share_petition" target="_blank" class="normal">
               <div id="petition">
                 <h2 class="normal">Change.org Petition</h2>
@@ -262,15 +320,16 @@ html, body {
         </ol>
         <ol class="footer_column">
           <li><h3>Credits:</h3></li>
-          <li><a class="pre_select">Bryan Johnson</a></li>
-          <li><a class="pre_select">Dylan Curnow</a></li>
-          <li><a class="blank">blank</a></li>
+          <li><a>Bryan Johnson</a></li>
+          <li><a>Dylan Curnow</a></li>
+          <li><a class="blank">You Found Me!</a></li>
         </ol>
         <ol class="footer_column">
-          <li><h3>Contact Us:</h3></li>
+          <li><h3>Contribute:</h3></li>
           <li><a>ungoal16@gmail.com</a></li>
-          <li><a class="pre_select" href="https://discord.gg/G2WGcjD" target="_blank">Discord Server</a></li>
-          <li><a class="blank">blank</a></li>
+          <li><a class="pre_select" href="https://discord.gg/VGUcZeu" target="_blank">Discord Server</a></li>
+          <li><a class="pre_select" href="https://github.com/StopChineseOrganTrafficking/1" target="_blank">GitHub Repository</a></li>
+          <!-- Since you've made it this far, you can edit the code with the link above -->
         </ol>
       </div>
     </div>
